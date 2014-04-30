@@ -81,6 +81,7 @@
     <orderEntry type="library" exported="" name="hamcrest-library-1.1" level="project" />
     <orderEntry type="library" exported="" name="espresso-1.1-r2" level="project" />
     <orderEntry type="library" exported="" name="espresso-runner-runtime-1.1-r2" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.2.0" level="project" />
     <orderEntry type="library" exported="" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="guava-16.0" level="project" />
     <orderEntry type="library" exported="" name="hamcrest-integration-1.1" level="project" />
