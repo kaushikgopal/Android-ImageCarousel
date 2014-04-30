@@ -19,12 +19,10 @@ def gitSha() {
 def buildTime = new Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
 
 apply plugin: 'android'
-apply plugin: 'crashlytics'
 
 
 repositories {
     mavenCentral()
-    maven { url 'http://download.crashlytics.com/maven' }
 }
 
 dependencies {
@@ -32,14 +30,13 @@ dependencies {
     compile project(':subModules:Android-ImageCarouselPojos')
 
     compile 'com.android.support:support-v13:18.0.+'
-    compile 'com.crashlytics.android:crashlytics:1.+'
-    compile 'com.google.guava:guava:15.+'
-    compile 'com.squareup.dagger:dagger:1.2.+'
-    provided 'com.squareup.dagger:dagger-compiler:1.2.+'
+//    compile 'com.google.guava:guava:15.+'
+//    compile 'com.squareup.dagger:dagger:1.2.+'
+//    provided 'com.squareup.dagger:dagger-compiler:1.2.+'
     compile 'com.jakewharton.timber:timber:2.2.+'
-    compile 'com.jakewharton:butterknife:4.0.+'
-    compile 'joda-time:joda-time:2.3'
-    compile 'nl.qbusict:cupboard:2.0.0'
+//    compile 'com.jakewharton:butterknife:4.0.+'
+//    compile 'joda-time:joda-time:2.3'
+//    compile 'nl.qbusict:cupboard:2.0.0'
 
     provided 'com.jakewharton.espresso:espresso:1.1-r2'
     androidTestCompile('com.jakewharton.espresso:espresso:1.1-r2') {
@@ -66,7 +63,7 @@ dependencies {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19"
+    buildToolsVersion "19.0.3"
 
     defaultConfig {
         minSdkVersion 14
