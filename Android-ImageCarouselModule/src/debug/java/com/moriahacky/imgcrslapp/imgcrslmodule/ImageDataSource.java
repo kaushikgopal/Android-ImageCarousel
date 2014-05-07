@@ -7,6 +7,12 @@ public class ImageDataSource {
     private String _title, _value;
     private ImageType _type;
 
+    ImageDataSource(ImageType type, String value) {
+        _type = type;
+        _value = value;
+        _title = "";
+    }
+
     public void setTitle(String title) {
         _title = title;
     }
