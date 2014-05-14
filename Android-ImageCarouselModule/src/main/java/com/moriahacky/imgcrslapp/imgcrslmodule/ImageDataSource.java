@@ -6,7 +6,7 @@ import android.os.Parcelable;
 public class ImageDataSource
     implements Parcelable {
 
-    public static final String KEY_IMGDATASOURCE_LIST = "com.moriahacky.imgcrslapp.imgcrslmodule.listImageDataSource";
+    public static final String KEY_IMGDS_LIST = "com.moriahacky.imgcrslapp.imgcrslmodule.listImageDataSource";
 
     public static enum ImageType {DRAWABLE, URL, URI}
 

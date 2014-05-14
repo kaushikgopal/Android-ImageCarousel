@@ -5,7 +5,8 @@ import android.support.v4.app.FragmentActivity;
 
 import com.moriahacky.imgcrslapp.imgcrslmodule.R;
 
-public class ImageCarouselActivity extends FragmentActivity {
+public class ImageCarouselActivity
+    extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

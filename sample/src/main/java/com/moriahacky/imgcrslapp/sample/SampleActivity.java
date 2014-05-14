@@ -37,7 +37,7 @@ public class SampleActivity
     @OnClick(R.id.btn_launch_carousel)
     public void onButtonPress() {
         Bundle extras = new Bundle();
-        extras.putParcelableArrayList(ImageDataSource.KEY_IMGDATASOURCE_LIST, _images);
+        extras.putParcelableArrayList(ImageDataSource.KEY_IMGDS_LIST, _images);
 
         Intent openCarouselIntent = new Intent(SampleActivity.this, ImageCarouselActivity.class);
         openCarouselIntent.putExtras(extras);
