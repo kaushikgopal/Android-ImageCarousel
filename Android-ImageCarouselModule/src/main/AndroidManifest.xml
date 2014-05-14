@@ -2,19 +2,10 @@
           package="com.moriahacky.imgcrslapp.imgcrslmodule">
 
     <application
-        android:name=".BaseApplication"
         android:allowBackup="true"
         android:label="@string/app_name"
         android:icon="@drawable/ic_launcher"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".activities.SampleActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
-
     </application>
 
 </manifest>

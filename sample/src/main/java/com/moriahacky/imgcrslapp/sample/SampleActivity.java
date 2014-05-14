@@ -8,6 +8,9 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.moriahacky.imgcrslapp.imgcrslmodule.ImageDataSource;
+import com.moriahacky.imgcrslapp.imgcrslmodule.activities.ImageCarouselActivity;
+
+import java.util.ArrayList;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -34,7 +37,7 @@ public class SampleActivity
     @OnClick(R.id.btn_launch_carousel)
     public void onButtonPress() {
         Bundle extras = new Bundle();
-        extras.putParcelableArrayList(KEY_IMGDATASOURCE_LIST, _images);
+        extras.putParcelableArrayList(ImageDataSource.KEY_IMGDATASOURCE_LIST, _images);
 
         Intent openCarouselIntent = new Intent(SampleActivity.this, ImageCarouselActivity.class);
         openCarouselIntent.putExtras(extras);
