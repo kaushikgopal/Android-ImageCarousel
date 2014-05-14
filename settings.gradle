@@ -1,1 +1,1 @@
-include ':Android-ImageCarouselModule', ':subModules:Android-ImageCarouselPojos'
+include ':sample', ':Android-ImageCarouselModule'

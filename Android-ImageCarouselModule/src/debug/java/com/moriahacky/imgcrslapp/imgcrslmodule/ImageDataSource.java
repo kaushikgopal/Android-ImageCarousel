@@ -6,33 +6,36 @@ import android.os.Parcelable;
 public class ImageDataSource
     implements Parcelable {
 
-    public static enum ImageType {DRAWABLE, URL}
+    public static final String KEY_IMGDATASOURCE_LIST = "com.moriahacky.imgcrslapp.imgcrslmodule.listImageDataSource";
+
+    public static enum ImageType {DRAWABLE, URL, URI}
 
     private String _title, _value;
+
     private ImageType _type;
 
-    ImageDataSource(ImageType type, String value) {
+    private int _drawableValue;
+
+    public ImageDataSource(ImageType type, String value) {
         _type = type;
         _value = value;
         _title = "";
+        _drawableValue = -1;
+
     }
 
-    ImageDataSource(ImageType type, String value, String title) {
+    public ImageDataSource(ImageType type, String value, String title) {
         _type = type;
         _value = value;
         _title = title;
+        _drawableValue = -1;
     }
 
-    public void setTitle(String title) {
-        _title = title;
-    }
-
-    public void setValue(String value) {
-        _value = value;
-    }
-
-    public void setType(ImageType type) {
+    public ImageDataSource(ImageType type, int drawableValue, String title) {
         _type = type;
+        _drawableValue = drawableValue;
+        _value = "";
+        _title = title;
     }
 
     public String getTitle() {
@@ -41,6 +44,10 @@ public class ImageDataSource
 
     public String getValue() {
         return _value;
+    }
+
+    public int getDrawableValue() {
+        return _drawableValue;
     }
 
     public ImageType getType() {
@@ -65,6 +72,7 @@ public class ImageDataSource
         this._type = Enum.valueOf(ImageType.class, in.readString());
         this._value = in.readString();
         this._title = in.readString();
+        this._drawableValue = in.readInt();
     }
 
     @Override
@@ -77,5 +85,6 @@ public class ImageDataSource
         out.writeString(_type.toString());
         out.writeString(_value);
         out.writeString(_title);
+        out.writeInt(_drawableValue);
     }
 }
