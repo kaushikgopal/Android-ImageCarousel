@@ -28,7 +28,7 @@ dependencies {
 //    compile 'com.google.guava:guava:15.+'
 //    compile 'com.squareup.dagger:dagger:1.2.+'
 //    provided 'com.squareup.dagger:dagger-compiler:1.2.+'
-    compile 'com.jakewharton.timber:timber:2.2.+'
+    compile 'com.jakewharton.timber:timber:2.2.2'
     compile 'com.squareup.picasso:picasso:2.2.+'
 //    compile 'com.jakewharton:butterknife:4.0.+'
 //    compile 'joda-time:joda-time:2.3'
@@ -60,7 +60,7 @@ dependencies {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.3"
+    buildToolsVersion "19.1.0"
 
     defaultConfig {
         minSdkVersion 8

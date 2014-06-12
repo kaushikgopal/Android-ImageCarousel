@@ -82,7 +82,43 @@ public class SampleActivity
                                   "IMG 2 - Bruce Lee");
         _images.add(src);
         src = new ImageDataSource(ImageDataSource.ImageType.URL,
-                                  "http://www.empireonline.com/_images/uploaded/chuck-norris-uzis.jpg",
+                                  "http://devops.com/wp-content/uploads/2014/03/Chuck-Norris-Card-1.jpg",
+                                  "IMG 3 - ChuckNorris");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.DRAWABLE,
+                                  R.drawable.rajni,
+                                  "IMG 4 - Rajni");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://chinesemartialstudies.files.wordpress.com/2013/07/bruce-lee-gloves.jpg",
+                                  "IMG 2 - Bruce Lee");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://devops.com/wp-content/uploads/2014/03/Chuck-Norris-Card-1.jpg",
+                                  "IMG 3 - ChuckNorris");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.DRAWABLE,
+                                  R.drawable.rajni,
+                                  "IMG 4 - Rajni");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://chinesemartialstudies.files.wordpress.com/2013/07/bruce-lee-gloves.jpg",
+                                  "IMG 2 - Bruce Lee");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://devops.com/wp-content/uploads/2014/03/Chuck-Norris-Card-1.jpg",
+                                  "IMG 3 - ChuckNorris");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.DRAWABLE,
+                                  R.drawable.rajni,
+                                  "IMG 4 - Rajni");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://chinesemartialstudies.files.wordpress.com/2013/07/bruce-lee-gloves.jpg",
+                                  "IMG 2 - Bruce Lee");
+        _images.add(src);
+        src = new ImageDataSource(ImageDataSource.ImageType.URL,
+                                  "http://devops.com/wp-content/uploads/2014/03/Chuck-Norris-Card-1.jpg",
                                   "IMG 3 - ChuckNorris");
         _images.add(src);
         src = new ImageDataSource(ImageDataSource.ImageType.DRAWABLE,
